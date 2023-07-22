@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #061C29;
+    background-image: linear-gradient(to bottom right , #061C29, #2C3333 );
+}
+.nav-bar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 15px ;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    background-color: #061C29;
+
+    z-index: 5;
+}
+.nav-bar h2 {
+    font-weight: bold;
+    color: #fff;
+    background-color: #27374D;
+    padding: 5px 20px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+}
+
+.nav-bar ul {
+    display: flex ;
+    align-items: center;
+    column-gap: 20px;
+    padding: 0;
+}
+.nav-bar ul li {
+    list-style: none;
+}
+.nav-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: all .3s;
+}
+.nav-bar ul li a:hover {
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+/* section1 */
+.section1 {
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    justify-content: space-around;
+    height: calc(100vh - 100px);
+    color: #FFF;
+    position: relative;
+}
+.section1 svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.section1 .div1 {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    top: -400px;
+    position: relative;
+    animation: div1-animation 1s ease forwards;
+}
+
+
+.section1 .div1  .btns  {
+    align-self: flex-end;
+}
+.section1 .div1 .span-txt {
+    position: relative;
+    letter-spacing: .9px;
+}
+
+
+.section1 .div1  .btns button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    transition: all .3s;
+    border: 1px solid #407BFF;
+}
+.section1 .div1  .btns .btn1 {
+    background-color: #407BFF;
+    color: #f4f4f4;
+    letter-spacing: 1px ;
+    margin-right: 10px;
+    transition: all .3s;
+}
+.section1 .div1  .btns .btn2 {
+    background-color: #061C29;
+    color: #fff;
+}
+.section1 .div1  .btns .btn1:hover {
+    box-shadow: 0px 0px 60px #407BFF70;
+    transform: scale(1.1);
+    background-color: #061C29;
+}
+.section1 .div1  .btns .btn2:hover {
+    box-shadow: 0px 0px 60px #407BFF70;
+    margin: 10px;
+    color: #fff;
+    background-color: #407BFF;
+    transform: scale(1.1);
+}
+.section1 .div2 {
+    width: 50%;
+    height: 500px;
+    flex-shrink: 0;
+    right: -700px;
+    position: relative;
+    animation: div2-animation .3s ease forwards;
+    animation-delay: 1s;
+}
+.section1 .div2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;    
+}
+@keyframes div1-animation {
+    0% {
+        top: -400px;
+        opacity: 0;
+    }
+    50% {
+        top: -200px;
+        opacity: .5;
+    }
+    100% {
+        top: 0px;
+        opacity: 1;
+    }
+}
+@keyframes div2-animation {
+    from {
+        right: -700px;
+    }
+    to {
+        right: 0px;
+    }
+}
+
+/* section1 */
+
+/* #.carousel-wrapper */
+.carousel-wrapper {
+    padding: 30px;
+    position: relative;
+}
+.carousel-wrapper svg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.carousel {
+    width: 100%;
+    max-width: 600px;
+    padding: 90px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 320px;
+    background-color: #fff;
+    background-color: #0C202B;
+    border: 1px solid #407BFF;
+    color: white;
+}
+
+/* .carousel-wrapper */
+/* section2 */
+.section2 {
+    background-color: white;
+    padding: 20px;
+    height: max-content;
+}
+.section2 .div1 {
+    width: 100%;
+    max-width: 900px;
+    height: 400px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+.section2 .div1 .text-wrapper {
+    width: 100%;
+    max-width: 400px;
+}
+.section2 .div1 .img-wrapper {
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+}
+.section2 .div1 .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.section2 .div2 {
+    width: 100%;
+    max-width: 900px;
+    height: 400px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+.section2 .div2 .text-wrapper {
+    width: 100%;
+    max-width: 400px;
+}
+.section2 .div2 .img-wrapper {
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+}
+.section2 .div2 .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* section2 */
+
+
+/* section3 */
+.section3 {
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    background-color: #fff;
+    background-color: #0C202B90;
+}
+.section3 .sec3-header {
+    font-size: 25px;
+    color: #fff;
+    letter-spacing: 2px;
+    border: 2px solid #fff;
+    width: max-content;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.section3 .sec3-header:hover {
+    transform: scale(1.1);
+    opacity: .5;
+}
+
+.section3 .section3-c-div {
+    display: flex;
+    column-gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.section3 .section3-c-div div {
+    width: 100%;
+    max-width: 500px;
+    height: 250px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 20, 0, 0.3) 0px 30px 60px -30px, #fff 0px -2px 6px 0px inset;
+}
+
+.section3 .section3-c-div div p , h4 {
+    letter-spacing: 2px;
+}
+.section3 .section3-c-div div button {
+    align-self: flex-end;
+    padding: 7px 20px;
+    border-radius: 10px;
+    letter-spacing: 1.5px;
+    background-color: transparent;
+    transition: all .3s;
+    border: none;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.section3 .section3-c-div div button:hover {
+    transform: scale(1.1);
+}
+/* section3 */
+
+/* testimonails */
+.testimonails {
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    padding: 150px 50px 100px;
+    flex-wrap: wrap;
+    row-gap: 60px;
+    background-color: #f4f4f4;
+}
+.testimonails .child {
+    width: 400px;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid gray;
+}
+.testimonails .child .head {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: max-content;
+    margin-top: 20px;
+}
+.testimonails .child .head p {
+    font-size: 50px;
+    height: 30px;
+    color: black;
+}
+.testimonails .child .img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    box-shadow: 0px 0px 5px 5px #fff, 0px 0px 0px 5px#fff;
+}
+.testimonails .child .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.testimonails .child  .star-rating {
+    height: 30px;
+    width:100px;
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 5px;
+}
+/* testimonails */
+footer {
+    height: 400px;
+    background-color: #061C29;
+    color: #fff;
+}
+footer .footer-head {
+    width: 100%;
+    margin: auto;
+    height: max-content;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .footer-head img {
+    width: 90px;
+    height: 90px;
+}
+footer .footer-content {
+    display: flex;    
+    justify-content: space-around;
+}
+
+footer .footer-content .div1 .text p {
+    margin: 0;    
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+footer .footer-content .div1 .icons {
+    display: flex;
+    column-gap: 15px;    
+    margin-top: 20px;
+}
+footer .footer-content .div1 .icons i{
+    font-size: 30px;
+}
+footer .footer-content .div2 div p {
+    margin: 0;
+}
+footer .footer-content .div2 div{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+footer .footer-content .div4 .link {
+    display: flex;
+
+    flex-direction: column;
+}
+footer .footer-content div h3 {
+    font-size: 20px !important;
+    letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 768px) {
+    .section1 {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .section1 .div2 {
+        height: max-content;
+        width: 100%;
+    }
+}
+
+
+.footer1 {
+    display: flex;
+    justify-content: space-around;
+
+}
+.footer1 .box > div{
+    display: flex;
+    flex-direction: column;
+}

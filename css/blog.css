@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+body {
+    background-color: #061C29;
+    /* background-image: linear-gradient(to bottom right , #061C29, #2C3333 ); */
+}
+.nav-bar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 15px ;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    background-color: #061C29;
+
+    z-index: 5;
+}
+.nav-bar h2 {
+    font-weight: bold;
+    color: #fff;
+    background-color: #27374D;
+    padding: 5px 20px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+}
+
+.nav-bar ul {
+    display: flex ;
+    align-items: center;
+    column-gap: 20px;
+    padding: 0;
+}
+.nav-bar ul li {
+    list-style: none;
+}
+.nav-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: all .3s;
+}
+.nav-bar ul li a:hover {
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+section {
+    padding: 20px;
+}
+section .blog-box {
+    display: flex;
+    column-gap: 30px;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+    margin-top: 20px;
+}
+section .blog-box .img img {
+    border-radius: 20px;
+    width: 299px;
+    height: 169px;
+}
+section .blog-box .buttons p {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
